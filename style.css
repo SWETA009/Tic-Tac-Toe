@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(107, 95, 160, 0.794);
+    text-align: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    height: 70vh;
+    display: flex; /* Use flexbox for centering the game */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.game {
+    height: 300px; /* Set a fixed height */
+    width: 300px;  /* Set a fixed width */
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.box {
+    height: 90px; /* Set a fixed height */
+    width: 90px;  /* Set a fixed width */
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    font-size: 40px; /* Adjust font size */
+    color: crimson;
+    background-color: antiquewhite;
+}
+
+#reset {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: red;
+    border-radius: 1rem;
+    box-shadow: inset;
+    color: bisque;
+}
+
+.msg-cont {
+    font-size: 2rem;
+    color: darkred;
+}
+
+#newgm {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgb(43, 19, 200);
+    border-radius: 1rem;
+    box-shadow: inset;
+    color: bisque;
+}
+
+.hide {
+    display: none;
+}
